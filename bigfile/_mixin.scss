@@ -1,0 +1,45 @@
+@mixin little-span{
+    font-size: 30px;
+    font-weight: 700;
+    color: #565b42;
+    font-family: serif;
+}
+@mixin icons{
+    color: #777e77 !important; 
+    transition: 0.5s;
+    cursor: pointer;
+}
+@mixin icon-hover{
+    color: darkred !important;
+    transform: translateY(-5px);
+}
+@mixin div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    @media(max-width: 1024px){
+    gap: 44px;        
+    }
+    @media(max-width:480px){
+        gap: 20px;
+    }
+}
+@mixin h3{
+    color: darkred;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+@mixin sline{
+    width: 100px;
+    height: 1.5px;
+    background-color: black;
+    @media(max-width: 768px){
+        width: 70px;
+    }
+}
+@mixin div-{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

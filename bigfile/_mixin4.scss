@@ -1,0 +1,82 @@
+@mixin little-span{
+    font-size: 30px;
+    font-weight: 700;
+    color: #565b42;
+    font-family: serif;
+}
+@mixin icons{
+    color: #777e77 !important; 
+    transition: 0.5s;
+    cursor: pointer;
+}
+@mixin icon-hover{
+    color: darkred !important;
+    transform: translateY(-5px);
+}
+@mixin div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+@mixin h3{
+    color: darkred;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+@mixin sline{
+    width: 100px;
+    height: 1.5px;
+    background-color: black;
+}
+@mixin div-{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@mixin divcombo{
+    width: 200px;
+    height: 100px;
+    background-color: #777e77;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+@mixin divcombo2{
+    background-color: white;
+    transform: translateY(-3px);
+    border-radius: 5px;
+}
+@mixin longdiv{
+    font-size: 25px;
+    font-family: 'Lobster', sans-serif;
+    font-weight: 700;
+    color: white;
+    background-color: #777e77;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    transition: linear 1s;
+}
+@mixin longdiv2{
+    height: 50px;
+    width: 300px;
+    color: darkred;
+    background-color: white;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 900;
+    border-radius: 20px;
+    border: 2px solid darkred;
+}
+@mixin footerdiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: -270px;
+}

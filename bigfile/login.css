@@ -1,0 +1,512 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.hamburger {
+  cursor: pointer;
+  width: 38px;
+  height: 40px;
+  display: none;
+}
+@media (max-width: 480px) {
+  .hamburger {
+    display: block;
+  }
+}
+
+.hamburger input {
+  display: none;
+}
+
+.hamburger svg {
+  /* The size of the SVG defines the overall size */
+  height: 3em;
+  /* Define the transition for transforming the SVG */
+  -webkit-transition: -webkit-transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line {
+  fill: none;
+  stroke: black;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 3;
+  /* Define the transition for transforming the Stroke */
+  -webkit-transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line-top-bottom {
+  stroke-dasharray: 12 63;
+}
+
+.hamburger input:checked + svg {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.hamburger input:checked + svg .line-top-bottom {
+  stroke-dasharray: 20 300;
+  stroke-dashoffset: -32.42;
+}
+h1 {
+  font-size: 40px;
+  font-weight: 900;
+  color: darkred;
+  font-family: serif;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.sp1 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #565b42;
+  font-family: serif;
+}
+
+.sp2 {
+  font-size: 40px;
+  font-weight: 900;
+  color: darkred;
+  font-family: serif;
+}
+
+.sp3 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #565b42;
+  font-family: serif;
+}
+
+.header-div {
+  width: 97%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  margin-top: -20px;
+  gap: 20px;
+}
+i {
+  color: #777e77;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+.bottomdiv {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 50px;
+}
+@media (max-width: 480px) {
+  .bottomdiv {
+    gap: 15px;
+  }
+}
+.a {
+  color: #777e77;
+  font-size: 30px;
+  font-weight: 900;
+  font-family: serif;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+@media (max-width: 480px) {
+  .a {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+}
+a{
+  text-rendering: none;
+}
+
+i:hover {
+  -webkit-transform: translateY(-5px);
+      -ms-transform: translateY(-5px);
+          transform: translateY(-5px);
+  color: darkred;
+  cursor: pointer;
+}
+.iconp {
+  color: #777e77;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.iconp:hover {
+  color: darkred;
+  -webkit-transform: translateY(-5px);
+      -ms-transform: translateY(-5px);
+          transform: translateY(-5px);
+  cursor: pointer;
+}
+#textarea {
+  resize: none;
+  width: 500px;
+  height: 300px;
+  border: none;
+  background-color: #565b42;
+  color: black;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  @media(max-width:768px){
+  margin-top: 20px;
+  }
+  @media(max-width:480px){
+    margin-top: 20px;
+    width: 100%;
+  }
+}
+#textarea:hover{
+  border: 1px solid black;
+  background-color: darkred;
+  border-radius: 5px;
+}
+#textarea:focus{
+  border: 1px solid darkred !important;
+  background-color: white;
+  border-radius: 10px;
+  color: darkred;
+}
+.innerdiv{
+    width: 410px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 30px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+main{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+label{
+    color: darkred;
+}
+#fname{
+    background-color: #565b42;
+    border: none;
+    color: black;
+    -webkit-transition: 0.8s;
+    -o-transition: 0.8s;
+    transition: 0.8s;
+}
+#fname:hover{
+  border: 1px solid black;
+  background-color: darkred;
+  border-radius: 5px;
+}
+#fname:focus{
+  border: 1px solid darkred !important;
+  background-color: white;
+  border-radius: 7px;
+  color: darkred;
+  -webkit-transform: translateY(-5px);
+      -ms-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+#lname{
+  background-color: #565b42;
+  border: none;
+  color: black;
+  -webkit-transition: 0.8s;
+  -o-transition: 0.8s;
+  transition: 0.8s;
+}
+#lname:hover{
+  border: 1px solid black;
+  background-color: darkred;
+  border-radius: 5px;
+}
+#lname:focus{
+  border: 1px solid darkred !important;
+  background-color: white;
+  border-radius: 7px;
+  color: darkred;
+  -webkit-transform: translateY(-5px);
+      -ms-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+#mail{
+  background-color: #565b42;
+  border: none;
+  color: black;
+  -webkit-transition: 0.8s;
+  -o-transition: 0.8s;
+  transition: 0.8s;
+}
+#mail:hover{
+  border: 1px solid black;
+  background-color: darkred;
+  border-radius: 5px;
+}
+#mail:focus{
+  border: 1px solid darkred !important;
+  background-color: white;
+  border-radius: 7px;
+  color: darkred;
+  -webkit-transform: translateY(-5px);
+      -ms-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+#pass{
+  background-color: #565b42;
+  border: none;
+  color: black;
+  -webkit-transition: 0.8s;
+  -o-transition: 0.8s;
+  transition: 0.8s;
+}
+#pass:hover{
+  border: 1px solid black;
+  background-color: darkred;
+  border-radius: 5px;
+}
+#pass:focus{
+  border: 1px solid darkred !important;
+  background-color: white;
+  border-radius: 7px;
+  color: darkred;
+  -webkit-transform: translateY(-5px);
+      -ms-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+#num{
+  background-color: #565b42;
+  border: none;
+  color: black;
+  -webkit-transition: 0.8s;
+  -o-transition: 0.8s;
+  transition: 0.8s;
+}
+#num:hover{
+  border: 1px solid black;
+  background-color: darkred;
+  border-radius: 5px;
+}
+#num:focus{
+  border: 1px solid darkred !important;
+  background-color: white;
+  border-radius: 7px;
+  color: darkred;
+  -webkit-transform: translateY(-5px);
+      -ms-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+#date{
+  background-color: #565b42;
+  border: none;
+  color: black;
+  -webkit-transition: 0.8s;
+  -o-transition: 0.8s;
+  transition: 0.8s;
+}
+#date:hover{
+  border: 1px solid black;
+  background-color: darkred;
+  border-radius: 5px;
+}
+#date:focus{
+  border: 1px solid darkred !important;
+  background-color: white;
+  border-radius: 7px;
+  color: darkred;
+  -webkit-transform: translateY(-5px);
+      -ms-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+option{
+  background-color: white;
+  color: darkred;
+}
+#list{
+  background-color: #565b42;
+  border: none;
+  color: black;
+  -webkit-transition: 0.8s;
+  -o-transition: 0.8s;
+  transition: 0.8s;
+}
+#list:hover{
+  border: 1px solid black;
+  background-color: darkred;
+  border-radius: 5px;
+}
+#list:focus{
+  border: 1px solid darkred !important;
+  background-color: white;
+  border-radius: 7px;
+  color: darkred;
+  -webkit-transform: translateY(-5px);
+      -ms-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+#submit{
+  background-color: #565b42;
+  border: none;
+  color: black;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  margin-top: 20px;
+  @media(max-width:768px){
+    margin-left: 10px;
+  }
+}
+#submit:hover{
+  border: 1px solid black;
+  background-color: darkred;
+  border-radius: 5px;
+}
+#submit:active{
+  border: 1px solid darkred !important;
+  background-color: white;
+  border-radius: 7px;
+  color: darkred;
+  -webkit-transform: translateX(-5px);
+      -ms-transform: translateX(-5px);
+          transform: translateX(-5px);
+  -webkit-transform: translateY(-5px);
+      -ms-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+.outdiv{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 910px;
+}
+#fname::-webkit-input-placeholder{
+  color: black;
+}
+#fname::-moz-placeholder{
+  color: black;
+}
+#fname:-ms-input-placeholder{
+  color: black;
+}
+#fname::-ms-input-placeholder{
+  color: black;
+}
+#fname::placeholder{
+  color: black;
+}
+#lname::-webkit-input-placeholder{
+  color: black;
+}
+#lname::-moz-placeholder{
+  color: black;
+}
+#lname:-ms-input-placeholder{
+  color: black;
+}
+#lname::-ms-input-placeholder{
+  color: black;
+}
+#lname::placeholder{
+  color: black;
+}
+#mail::-webkit-input-placeholder{
+  color: black;
+}
+#mail::-moz-placeholder{
+  color: black;
+}
+#mail:-ms-input-placeholder{
+  color: black;
+}
+#mail::-ms-input-placeholder{
+  color: black;
+}
+#mail::placeholder{
+  color: black;
+}
+#pass::-webkit-input-placeholder{
+  color: black;
+}
+#pass::-moz-placeholder{
+  color: black;
+}
+#pass:-ms-input-placeholder{
+  color: black;
+}
+#pass::-ms-input-placeholder{
+  color: black;
+}
+#pass::placeholder{
+  color: black;
+}
+#num::-webkit-input-placeholder{
+  color: black;
+}
+#num::-moz-placeholder{
+  color: black;
+}
+#num:-ms-input-placeholder{
+  color: black;
+}
+#num::-ms-input-placeholder{
+  color: black;
+}
+#num::placeholder{
+  color: black;
+}
+main{
+  margin-top: 100px;
+}
+img{
+  width: 90px;
+  height: 30px;
+}
